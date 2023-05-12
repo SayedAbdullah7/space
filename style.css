@@ -1,0 +1,252 @@
+/*.bg {*/
+/*    !* The image used *!*/
+/*    background-image: url("images/bg1jpg.jpg");*/
+
+/*    !* Full height *!*/
+/*    !* height: 100%; *!*/
+/*    height: 100vh;*/
+/*    !*width: 100vh;*!*/
+/*    !*min-height: 100vh;*!*/
+
+/*    !* Center and scale the image nicely *!*/
+/*    background-position: center;*/
+/*    background-repeat: no-repeat;*/
+/*    background-size: cover;*/
+/*    overflow: hidden;*/
+
+/*}*/
+
+.dropdown-item:hover{
+    background-color: unset;
+}
+.dropdown-menu{
+    border: unset;
+}
+a {
+    font-family: 'Inter', sans-serif !important;
+    text-transform: capitalize;
+    font-size: 18px !important;
+}
+.container {
+    max-width: 1668px;
+}
+
+#moon{
+    transition: all 2s ease-out;
+    width: 12vw;
+    min-width:110px;;
+    position: absolute;
+    left: 66%;
+    top: 22%
+}
+.two #moon  {
+    /*animation: animation-moon-p2  2s linear forwards ;*/
+    width: 36vw;
+    left: 60%;
+    top: 35vh;
+    transform: rotate(177deg);
+}
+.three #moon  {
+    /*animation: animation-moon-p2  2s linear forwards ;*/
+    width: 33vw;
+    left: 10%;
+    top: 22%;
+    transform: rotate(440deg);
+}
+
+.four #moon  {
+    /*animation: animation-moon-p2  2s linear forwards ;*/
+    width: 28vw;
+    left: 10%;
+    top: 65%;
+    transform: rotate(560deg);
+}
+.five #moon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(575deg);
+    text-align: center;
+    width: 36vw;
+    z-index: -1;
+
+}
+.five #last-banner {
+    transition: all 2s ease-out;
+    position: absolute;
+    top: 40% !important;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 28vw;
+    z-index: 1000;
+
+}
+#page-5 .banner{
+    transition: all 2s ease-out;
+    position: absolute;
+    top: 35% !important;
+    left: 50%;
+    transform: translate(-50%, -75%);
+    text-align: center;
+    width: 35vw;
+    z-index: 1000;
+    opacity: 0;
+}
+.five .banner{
+    top: 30% !important;
+    opacity: 1 !important;
+}
+
+@keyframes animation-moon-p2 {
+
+    100% {
+        /*transform: rotate(360deg);*/
+        /*transform: rotate(177.62deg);*/
+        /*position: absolute;*/
+        /*width: 727.09px;*/
+        /*height: 713.48px;*/
+        /*left: 1686.08px;*/
+        /*top: 700px;*/
+        /*width: 700px;*/
+        /*left: 986.08px;*/
+        /*top: 349.86px;*/
+        width: 36vw;
+        left: 60%;
+        top: 35vh;
+        transform: rotate(177deg);
+    }
+}
+.bg{
+    /*background: url('images/bg1jpg.jpg') no-repeat   center center fixed;*/
+    /*-webkit-background-size: cover;*/
+    /*-moz-background-size: cover;*/
+    /*-o-background-size: cover;*/
+    /*background-size: cover;*/
+    /*height: 83vh;*/
+    overflow: hidden;
+    transition: all 2s ease-out;
+    position: relative;
+}
+body.two {
+    background-image: url("images/bg2.png");
+}
+
+
+p{
+    font-family: 'Inter', sans-serif !important;
+}
+.center-absolute{
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+}
+#space-ship{
+    transition: all 2s linear;
+    /*right: 50vw;*/
+    /*top: 0;*/
+    opacity: 0;
+    height: 80vh;
+}
+.two #space-ship{
+    opacity: 1;
+}
+.s-item {
+    position: relative;
+}
+
+.s-item {
+    position: relative;
+}
+
+/*#mydiv {*/
+/*    position: absolute;*/
+/*    top: 35vh;*/
+/*    left: 50%;*/
+/*    transform: translate(-50%, -35%);*/
+/*    text-align: center;*/
+/*    width: 100%;*/
+/*}*/
+
+/*#mydiv img {*/
+/*    display: block;*/
+/*    max-width: 100%; !* Set max-width to 100% to ensure the image scales proportionally *!*/
+/*    width: 100%; !* Set width to 100% to match the container width *!*/
+/*    height: auto; !* Set height to auto to maintain aspect ratio *!*/
+/*}*/
+#plants-two{
+    margin-top: 370px !important;
+    transition: all 2s ease-out;
+    opacity: 0;
+}
+#test{
+    /*position: absolute;;*/
+    transition: all 2s ease-out;
+}
+.three #test{
+    /*position: unset !important;*/
+    /*top: 10% !important;*/
+    /*margin-right: 0vw !important;*/
+    margin-right: -4.9vw !important;
+
+}
+
+.three #plants-two{
+    margin-top: 0 !important;
+    opacity: 0.8;
+}
+p {
+    font-size: 2.1vw;
+}
+#page-4 .container{
+    padding: 0 16vw;
+}
+/* CSS code for mobile devices only */
+
+@media (max-width: 767px) {
+    /* Write your CSS code for mobile devices here */
+
+    /* For example, to change the background color of the body */
+    body {
+        background-color: #f2f2f2;
+    }
+
+    /* To change the font size of a paragraph */
+    p {
+        font-size: 4.1vw;
+    }
+    .first-paragraph{
+        margin-top: 11vh !important;
+    }
+    .group-one {
+        width: 100% !important;
+        margin: 0px 0px !important;
+        margin-top: 11vh !important;
+    }
+    .group-one .paragraph{
+        /*margin-top: 11vh !important;*/
+    }
+    #space-ship{
+        width: 80vw;
+        height: unset!important;
+    }
+    .three #moon  {
+        /*animation: animation-moon-p2  2s linear forwards ;*/
+        width: 50vw;
+    }
+    .three #test{
+        margin-right: -13vw !important;
+
+    }
+    #page-4 .container{
+        padding: 0 2.6vw;
+    }
+    .four #moon {
+        width: 65vw;
+        top: 50%;
+        left: 0%;
+    }
+
+}
