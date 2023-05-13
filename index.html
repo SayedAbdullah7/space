@@ -112,10 +112,10 @@
       }
 
     </style>
-      <link href="style.css" rel="stylesheet" >
     <!-- Custom styles for this template -->
     <link href="navbars.css" rel="stylesheet">
       <link rel="stylesheet" href="css-slider/style.css">
+      <link href="style.css" rel="stylesheet" >
       <style>
           .dropdown-submenu {
               position: relative;
@@ -166,14 +166,14 @@
                       </a>
                   </div>
                   <div class="dropdown-center col-7 navbar-toggler" style="margin: auto 0;text-align: center;">
-                      <button class="btn btn-secondary dropdown-toggle bg-transparent" type="button" data-bs-toggle="dropdown" aria-expanded="false " style="border-radius: 8px;border-color: #D9D9D9;border-width:2px;padding: 0px 18px;">
+                      <button class="btn btn-secondary dropdown-toggle bg-transparent" type="button" data-bs-toggle="dropdown" aria-expanded="false " data-bs-auto-close="outside" style="border-radius: 8px;border-color: #D9D9D9;border-width:2px;padding: 0px 18px;">
                           Home
                       </button>
-                      <ul class="dropdown-menu bg-transparent" aria-labelledby="navbarDropdownMenuLink">
+                      <ul class="dropdown-menu bg-transparent" style="width: 100%;text-align: center;" aria-labelledby="navbarDropdownMenuLink"  >
                           <li><a class="dropdown-item text-white " href="#">about us</a></li>
                           <li class="dropdown-submenu">
                               <a class="dropdown-item text-white" href="#" tabindex="-1">space programs</a>
-                              <ul class="dropdown-menu dropdown-menu-start bg-transparent">
+                              <ul class="dropdown-menu dropdown-menu-start bg-transparent" style="left: 70%;">
                                   <li><a class="dropdown-item text-white" href="#">missions</a></li>
                                   <li><a class="dropdown-item text-white" href="#">education</a></li>
                                   <li><a class="dropdown-item text-white" href="#">projects</a></li>
@@ -191,7 +191,7 @@
 
         <div class="collapse navbar-collapse d-lg-flex" id="navbarsExample11">
 <!--          <a class="navbar-brand col-lg-3 me-0" href="#">Centered nav</a>-->
-          <div class="container col-lg-2" style="margin: 0px 112px ">
+          <div class="container col-lg-2" style="margin: 0px 5.8vw ">
             <a class="navbar-brand" href="#">
               <img src="images/bg-logo.png" alt="Bootstrap" width="174" >
             </a>
@@ -306,7 +306,7 @@
                                     <img  width="100%" src="images/bg-logo.png">
                                 </div>
                                 <div class="col-12">
-                                    <button type="button" class="btn btn-secondary btn-lg mt-5">Large button</button>
+                                    <button id="explore" type="button" class="btn btn-secondary btn-lg mt-5 text-uppercase ">explore</button>
                                 </div>
                             </div>
                         </div>
@@ -321,14 +321,114 @@
                 <label class="s-c-5" for="s-5"></label>
             </div>
             <div class="s-nav">
-                <label class="s-nav-1 right" for="s-2" style="z-index: 500"></label>
-                <label class="s-nav-2 left" for="s-1" style="z-index: 500"></label>
-                <label class="s-nav-2 right" for="s-3" style="z-index: 500"></label>
-                <label class="s-nav-3 left" for="s-2" style="z-index: 500"></label>
-                <label class="s-nav-3 right" for="s-4" style="z-index: 500"></label>
-                <label class="s-nav-4 left" for="s-3" style="z-index: 500"></label>
-                <label class="s-nav-4 right" for="s-5" style="z-index: 500"></label>
-                <label class="s-nav-5 left" for="s-4" style="z-index: 500"></label>
+                <label class="s-nav-1 left btn btn-outline-light text-uppercase navigate p-0" for="s-5">
+                    <div class="row m-auto w-100 h-100 p-0"  >
+                        <div class="col-6 p-0 m-auto" >
+                            <svg class="arrow" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 448 512">
+                                <path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/>
+                            </svg>
+                        </div>
+                        <div class="col-6  p-0 m-auto">
+                            <span class="m-auto" >skip</span>
+                        </div>
+                    </div>
+                </label>
+                <label class="s-nav-1 right btn btn-outline-light text-uppercase navigate p-0" for="s-2">
+                    <div class="row m-auto w-100 h-100 p-0"  >
+                        <div class="col-6  p-0 m-auto">
+                            <span class="m-auto" >next</span>
+                        </div>
+                        <div class="col-6 p-0 m-auto" >
+                            <svg class="arrow" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 448 512">
+                                <path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </label>
+                <label class="s-nav-2 left btn btn-outline-light text-uppercase navigate p-0" for="s-1">
+                    <div class="row m-auto w-100 h-100 p-0"  >
+                        <div class="col-6 p-0 m-auto" >
+                            <svg class="arrow" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 448 512">
+                                <path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/>
+                            </svg>
+                        </div>
+                        <div class="col-6  p-0 m-auto">
+                            <span class="m-auto" >back</span>
+                        </div>
+                    </div>
+                </label>
+                <label class="s-nav-2 right btn btn-outline-light text-uppercase navigate p-0" for="s-3">
+                    <div class="row m-auto w-100 h-100 p-0"  >
+                        <div class="col-6  p-0 m-auto">
+                            <span class="m-auto" >next</span>
+                        </div>
+                        <div class="col-6 p-0 m-auto" >
+                            <svg class="arrow" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 448 512">
+                                <path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </label>
+                <label class="s-nav-3 left  btn btn-outline-light text-uppercase navigate p-0" for="s-2">
+                    <div class="row m-auto w-100 h-100 p-0"  >
+                        <div class="col-6 p-0 m-auto" >
+                            <svg class="arrow" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 448 512">
+                                <path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/>
+                            </svg>
+                        </div>
+                        <div class="col-6  p-0 m-auto">
+                            <span class="m-auto" >back</span>
+                        </div>
+                    </div>
+                </label>
+                <label class="s-nav-3 right btn btn-outline-light text-uppercase navigate p-0" for="s-4">
+                    <div class="row m-auto w-100 h-100 p-0"  >
+                        <div class="col-6  p-0 m-auto">
+                            <span class="m-auto" >next</span>
+                        </div>
+                        <div class="col-6 p-0 m-auto" >
+                            <svg class="arrow" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 448 512">
+                                <path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </label>
+                <label class="s-nav-4 left  btn btn-outline-light text-uppercase navigate p-0" for="s-3">
+                    <div class="row m-auto w-100 h-100 p-0"  >
+                        <div class="col-6 p-0 m-auto" >
+                            <svg class="arrow" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 448 512">
+                                <path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/>
+                            </svg>
+                        </div>
+                        <div class="col-6  p-0 m-auto">
+                            <span class="m-auto" >back</span>
+                        </div>
+                    </div>
+                </label>
+                <label class="s-nav-4 right btn btn-outline-light text-uppercase navigate p-0" for="s-5">
+                    <div class="row m-auto w-100 h-100 p-0"  >
+                        <div class="col-6  p-0 m-auto">
+                            <span class="m-auto" >next</span>
+                        </div>
+                        <div class="col-6 p-0 m-auto" >
+                            <svg class="arrow" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 448 512">
+                                <path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </label>
+                <label class="s-nav-5 left  btn btn-outline-light text-uppercase navigate p-0" for="s-4">
+                    <div class="row m-auto w-100 h-100 p-0"  >
+                        <div class="col-6 p-0 m-auto" >
+                            <svg class="arrow" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 448 512">
+                                <path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/>
+                            </svg>
+                        </div>
+                        <div class="col-6  p-0 m-auto">
+                            <span class="m-auto" >back</span>
+                        </div>
+                    </div>
+                </label>
             </div>
         </div>
         <div>
@@ -421,5 +521,29 @@
     });
 
 </script>
+  <script>
+      // document.addEventListener('click', function(event) {
+      //     console.log('addEventListener')
+      //     console.log(event.target)
+      //     if (event.target.matches('.dropdown-menu')) {
+      //         console.log('matches')
+      //         event.stopPropagation();
+      //     }
+      // });
+      var elements = document.querySelectorAll(".dropdown-item");
+
+      //event
+      for (var i = 0; i < elements.length; i++) {
+          elements[i].addEventListener("click", function() {
+              // remove
+              for (var i = 0; i < elements.length; i++) {
+                  elements[i].classList.remove("active");
+              }
+              this.classList.add("active");
+          });
+      }
+
+
+  </script>
   </body>
 </html>
