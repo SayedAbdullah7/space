@@ -15,6 +15,78 @@
 /*    overflow: hidden;*/
 
 /*}*/
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+
+  .b-example-divider {
+    width: 100%;
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+  }
+
+  .b-example-vr {
+    flex-shrink: 0;
+    width: 1.5rem;
+    height: 100vh;
+  }
+
+  .bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+  }
+
+  .nav-scroller {
+    position: relative;
+    z-index: 2;
+    height: 2.75rem;
+    overflow-y: hidden;
+  }
+
+  .nav-scroller .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .btn-bd-primary {
+    --bd-violet-bg: #712cf9;
+    --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+    --bs-btn-font-weight: 600;
+    --bs-btn-color: var(--bs-white);
+    --bs-btn-bg: var(--bd-violet-bg);
+    --bs-btn-border-color: var(--bd-violet-bg);
+    --bs-btn-hover-color: var(--bs-white);
+    --bs-btn-hover-bg: #6528e0;
+    --bs-btn-hover-border-color: #6528e0;
+    --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+    --bs-btn-active-color: var(--bs-btn-hover-color);
+    --bs-btn-active-bg: #5a23c8;
+    --bs-btn-active-border-color: #5a23c8;
+  }
+  .bd-mode-toggle {
+    z-index: 1500;
+  }
+/********/
 
 .dropdown-item:hover{
     background-color: unset;
@@ -124,7 +196,8 @@ a {
     /*-o-background-size: cover;*/
     /*background-size: cover;*/
     /*height: 83vh;*/
-    overflow: hidden;
+    /*overflow: hidden;*/
+    overflow-x: hidden;
     transition: all 2s ease-out;
     position: relative;
 }
@@ -252,11 +325,38 @@ p {
     bottom: 10px ;
 }
 
+.base-color{
+    color:#9747FF
+}
+.head{
+    font-size: 32px;
+}
+#about,#education{
+    margin-top: 21vh;
+}
+.content p{
+    font-size: 1.67vw !important;
+}
+.social-icon{
+    width: 35px;
+}
+#copy-right {
+    direction: rtl;
+    font-size: 14px;
+    color: #535353
+}
+#event p{
+    margin: 3vh 0;
+}
+@media (max-width: 1000px) {
+    .content p {
+        font-size: 18px !important
+    }
+}
 /* CSS code for mobile devices only */
 
 @media (max-width: 767px) {
     /* Write your CSS code for mobile devices here */
-
     /* For example, to change the background color of the body */
     body {
         background-color: #f2f2f2;
@@ -266,77 +366,118 @@ p {
     p {
         font-size: 4.1vw;
     }
-    .first-paragraph{
+
+    .first-paragraph {
         margin-top: 11vh !important;
     }
+
     .group-one {
         width: 100% !important;
         margin: 0px 0px !important;
         margin-top: 11vh !important;
     }
-    .group-one .paragraph{
+
+    .group-one .paragraph {
         /*margin-top: 11vh !important;*/
     }
-    #space-ship{
+
+    #space-ship {
         width: 80vw;
-        height: unset!important;
+        height: unset !important;
     }
-    .three #moon  {
+
+    .three #moon {
         /*animation: animation-moon-p2  2s linear forwards ;*/
         width: 50vw;
     }
-    .three #test{
+
+    .three #test {
         margin-right: -13vw !important;
 
     }
-    #page-4 .container{
+
+    #page-4 .container {
         padding: 0 2.6vw;
     }
+
     .four #moon {
         width: 65vw;
         top: 50%;
         left: 0%;
     }
+
     .five #moon {
         width: 95vw;
     }
-    #page-5 .banner{
+
+    #page-5 .banner {
         width: 80vw;
         top: 43% !important;
     }
-    #explore{
+
+    #explore {
         font-size: 12px;
         width: 134px;
         height: 40px;
     }
-    .navbar a{
+
+    .navbar a {
         font-size: 12px !important;
     }
-    .navbar adropdown-item.active a , .navbar a.dropdown-item:active{
+
+    .navbar adropdown-item.active a, .navbar a.dropdown-item:active {
         transition: all 0.3s ease-out;
         font-size: 15px !important;
     }
+
     .s-type-1 .s-nav label.left {
         left: 2vw !important;
     }
+
     .s-type-1 .s-nav label.right {
         right: 2vw !important;
     }
-    .arrow{
+
+    .arrow {
         width: 14px;
     }
-    .navigate{
+
+    .navigate {
         width: 65px;
         height: 35px;
     }
-    .navigate span{
+
+    .navigate span {
         font-size: 8px;
     }
-    .s-type-1 .s-control > label[class^=s-c-]{
+
+    .s-type-1 .s-control > label[class^=s-c-] {
         width: 9px;
         height: 9px;
     }
+
     .s-type-1 .s-control {
-        bottom: 20px ;
+        bottom: 20px;
+    }
+    .head{
+        font-size: 16px;
+    }
+    .content p {
+        font-size: 15px !important;
+    }
+
+    .social-icon {
+        width: 15px;
+    }
+
+    #get-in-touch {
+        font-size: 8px !important;
+    }
+
+    #copy-right {
+        font-size: 12px ;
+    }
+    #about{
+        margin-top: 100px;
     }
 }
