@@ -15,6 +15,24 @@
 /*    overflow: hidden;*/
 
 /*}*/
+/*.s-wrap{ display:flex; flex-direction:column; }*/
+/*.new{ flex:1; }*/
+
+.s-type-1 #s-1:checked ~ div .s-nav .s-nav-1 {
+    display: block;
+}
+.s-type-1 #s-2:checked ~ div .s-nav .s-nav-2 {
+    display: block;
+}
+.s-type-3 #s-3:checked ~ div .s-nav .s-nav-3 {
+    display: block;
+}
+.s-type-3 #s-3:checked ~ div .s-nav .s-nav-3 {
+    display: block;
+}
+.s-type-3 #s-3:checked ~ div .s-nav .s-nav-3 {
+    display: block;
+}
 .bd-placeholder-img {
     font-size: 1.125rem;
     text-anchor: middle;
@@ -104,7 +122,7 @@ a {
 }
 
 #moon{
-    transition: all 2s ease-out;
+    transition: all 1s ease-out;
     width: 12vw;
     min-width:110px;;
     position: absolute;
@@ -112,14 +130,15 @@ a {
     top: 22%
 }
 .two #moon  {
-    /*animation: animation-moon-p2  2s linear forwards ;*/
+    /*animation: animation-moon-p2  1s linear forwards ;*/
     width: 36vw;
-    left: 60%;
+    left: 51%;
     top: 35vh;
     transform: rotate(177deg);
+
 }
 .three #moon  {
-    /*animation: animation-moon-p2  2s linear forwards ;*/
+    /*animation: animation-moon-p2  1s linear forwards ;*/
     width: 33vw;
     left: 10%;
     top: 22%;
@@ -127,10 +146,10 @@ a {
 }
 
 .four #moon  {
-    /*animation: animation-moon-p2  2s linear forwards ;*/
+    /*animation: animation-moon-p2  1s linear forwards ;*/
     width: 28vw;
     left: 10%;
-    top: 65%;
+    top: 77%;
     transform: rotate(560deg);
 }
 .five #moon {
@@ -143,19 +162,9 @@ a {
     z-index: -1;
 
 }
-.five #last-banner {
-    transition: all 2s ease-out;
-    position: absolute;
-    top: 40% !important;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    width: 28vw;
-    z-index: 1000;
 
-}
 #page-5 .banner{
-    transition: all 2s ease-out;
+    transition: all 1s ease-out;
     position: absolute;
     top: 35% !important;
     left: 50%;
@@ -198,7 +207,7 @@ a {
     /*height: 83vh;*/
     /*overflow: hidden;*/
     overflow-x: hidden;
-    transition: all 2s ease-out;
+    transition: all 1s ease-out;
     position: relative;
 }
 body.two {
@@ -217,14 +226,28 @@ p{
     position: absolute;
 }
 #space-ship{
-    transition: all 2s linear;
-    /*right: 50vw;*/
-    /*top: 0;*/
-    opacity: 0;
     height: 80vh;
+    right: 50%;
+    top: 55%;
+    transform: translate(50%, -50%);
+    opacity: 0;
+    transition: all 1s ease-in;
+
 }
-.two #space-ship{
-    opacity: 1;
+/*#space-ship{*/
+/*    transition: all 1s ease-in;*/
+/*    !*right: 50vw;*!*/
+/*    !*top: 0;*!*/
+/*    opacity: 0;*/
+/*    height: 80vh;*/
+
+    /*width: 80vw;*/
+    /*height: unset !important;*/
+
+/*}*/
+
+.two #space-ship {
+    opacity: 1 !important;
 }
 .s-item {
     position: relative;
@@ -251,19 +274,18 @@ p{
 /*}*/
 #plants-two{
     margin-top: 370px !important;
-    transition: all 2s ease-out;
+    transition: all 1s ease-out;
     opacity: 0;
 }
 #test{
     /*position: absolute;;*/
-    transition: all 2s ease-out;
+    transition: all 1s ease-out;
 }
 .three #test{
     /*position: unset !important;*/
     /*top: 10% !important;*/
     /*margin-right: 0vw !important;*/
-    margin-right: -4.9vw !important;
-
+    margin-right: -6.9vw !important;
 }
 
 .three #plants-two{
@@ -352,6 +374,9 @@ p {
     .content p {
         font-size: 18px !important
     }
+    #page-2 p{
+        margin-left: 0 !important;
+    }
 }
 /* CSS code for mobile devices only */
 
@@ -387,12 +412,19 @@ p {
     }
 
     .three #moon {
-        /*animation: animation-moon-p2  2s linear forwards ;*/
+        /*animation: animation-moon-p2  1s linear forwards ;*/
         width: 50vw;
     }
 
     .three #test {
         margin-right: -13vw !important;
+
+    }
+    .three .s-item  .group{
+        margin-top: 44Vh !important;
+    }
+    .three .s-item  p{
+        font-size: 20px;
 
     }
 
