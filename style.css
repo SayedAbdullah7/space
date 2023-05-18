@@ -17,7 +17,12 @@
 /*}*/
 /*.s-wrap{ display:flex; flex-direction:column; }*/
 /*.new{ flex:1; }*/
-
+.inter-font{
+    font-family: 'Inter', sans-serif !important;
+}
+.montserrat-font{
+    font-family: 'Montserrat', sans-serif;
+}
 .s-type-1 #s-1:checked ~ div .s-nav .s-nav-1 {
     display: block;
 }
@@ -512,4 +517,14 @@ p {
     #about{
         margin-top: 100px;
     }
+}
+
+
+/* contact us */
+#contact-us-btn{
+background-color: #000;
+width: 374px;
+height: 77px;
+border-radius: 48px;
+font-size: 24px;
 }
